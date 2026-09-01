@@ -1,0 +1,262 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-primary: #0b1325;
+    --bg-secondary: #141824;
+    --bg-card: #1e2536;
+    --accent-gold: #d4af37;
+    --accent-gold-hover: #f1c40f;
+    --text-main: #ffffff;
+    --text-muted: #a0aec0;
+    --border-gold: rgba(212, 175, 55, 0.3);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-main);
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: var(--bg-secondary);
+    border-bottom: 2px solid var(--accent-gold);
+    transition: all 0.3s ease;
+}
+
+.nav-link {
+    color: #f1c40f !important;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #f1c40f !important;
+    padding-bottom: 0;
+    border-bottom: 2px solid var(--accent-gold);
+}
+
+.logo {
+    height: 50px;
+    width: 150px;
+    object-fit: contain;
+}
+
+.hero {
+    height: fit-content;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.product-card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-gold);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    border-color: var(--accent-gold);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+.btn-gold {
+    background-color: var(--accent-gold);
+    color: #000;
+    font-weight: bold;
+    border: 1px solid var(--accent-gold);
+    transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+    background-color: var(--accent-gold-hover);
+    color: #000;
+    border-color: var(--accent-gold-hover);
+    transform: translateY(-2px);
+}
+
+.ctrc img {
+    height: 150px;
+    padding: 10px;
+    object-fit: contain;
+}
+
+@media (max-width: 768px) {
+
+    .logo {
+        height: 45px;
+        width: 130px;
+    }
+
+    .hero {
+        width: 100%;
+    }
+
+    .ctrc img {
+        height: 120px;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+    .logo {
+        height: 40px;
+        width: 120px;
+    }
+
+    .ctrc img {
+        height: 100px;
+        padding: 8px;
+    }
+
+}
+
+.centr {
+    display: flex;
+    justify-content: center;
+}
+
+.btnsear {
+    border-color: #f1c40f;
+    font-weight: 500;
+    color: #d4af37;
+}
+
+.btnsear:hover {
+    background-color: #f1c40f;
+    font-weight: 500;
+    color: black;
+}
+
+.products-section {
+    padding: 10px;
+}
+
+/* Product Card */
+.products-section .card {
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.products-section .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Carousel */
+.products-section .carousel {
+    position: relative;
+    background: #fff;
+}
+
+.products-section .carousel-item {
+    height: 280px;
+}
+
+/* Product Images */
+.products-section .carousel-item img {
+    width: 100%;
+    height: 280px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+/* Carousel Caption */
+.products-section .carousel-caption {
+    background: rgba(0, 0, 0, 0.65);
+    border-radius: 5px;
+    padding: 5px 8px;
+    bottom: 25px;
+}
+
+.products-section .carousel-caption h5 {
+    font-size: 14px;
+    margin: 0;
+}
+
+.products-section .carousel-caption p {
+    font-size: 11px;
+    margin: 2px 0 0;
+}
+
+/* Indicators */
+.products-section .carousel-indicators {
+    margin-bottom: 5px;
+}
+
+.products-section .carousel-indicators button {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+/* Card Body */
+.products-section .card-title {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.products-section .card-text {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Card Footer */
+.products-section .card-footer {
+    background: transparent;
+    border: 0;
+    padding-top: 0;
+    padding-bottom: 15px;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+
+    .products-section .carousel-item {
+        height: 300px;
+    }
+
+    .products-section .carousel-item img {
+        height: 300px;
+    }
+
+    .products-section .carousel-caption {
+        display: none !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bottom{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #000;
+}
+.botm{
+    text-align: center;
+    width: 50vw;
+}
