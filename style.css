@@ -219,14 +219,38 @@ body {
     .category-heading {
         align-items: start;
         flex-direction: column;
-        gap: 14px;
+        gap: 9px;
+        margin-bottom: 16px;
+    }
+
+    .category-heading h1 {
+        font-size: 26px;
+        line-height: 1.1;
+        text-align: left;
+    }
+
+    .category-heading .section-kicker {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+        margin-bottom: 5px;
+        text-align: left;
+    }
+
+    .category-heading > div {
+        width: 100%;
+    }
+
+    .category-view-all {
+        align-self: flex-end;
+        font-size: 13px;
+        padding-bottom: 3px;
     }
 
     .category-grid {
         display: grid;
         gap: 10px;
         grid-template-columns: repeat(3, minmax(0, 1fr));
-        grid-template-rows: 170px 125px;
+        grid-template-rows: 115px 110px;
     }
 
     .category-tile-wide {
@@ -245,17 +269,38 @@ body {
     }
 
     .category-copy small {
-        font-size: 9px;
+        font-size: 8px;
         letter-spacing: 1px;
     }
 
     .category-copy strong {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .category-copy em {
-        font-size: 10px;
+        font-size: 9px;
         margin-top: 5px;
+    }
+
+    .category-tile:not(.category-tile-wide) .category-copy {
+        bottom: 8px;
+        left: 8px;
+        right: 7px;
+    }
+
+    .category-tile:not(.category-tile-wide) .category-copy small {
+        font-size: 7px;
+        letter-spacing: 0.5px;
+    }
+
+    .category-tile:not(.category-tile-wide) .category-copy strong {
+        font-size: 10px;
+        line-height: 1.05;
+    }
+
+    .category-tile:not(.category-tile-wide) .category-copy em {
+        font-size: 8px;
+        margin-top: 3px;
     }
 
 }
@@ -1343,6 +1388,11 @@ body {
     .site-footer {
         align-items: start;
         flex-direction: column;
+    }
+
+    .lineup-heading > div {
+        text-align: left;
+        width: 100%;
     }
 
     .information-section,
