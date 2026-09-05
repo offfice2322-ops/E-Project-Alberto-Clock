@@ -303,7 +303,7 @@ const initialiseTicker = () => {
     const ticker = document.createElement("div")
     ticker.className = "live-ticker"
     ticker.setAttribute("aria-live", "polite")
-    ticker.innerHTML = '<div class="live-ticker-track"><span>ALBERTO CLOCKS LIVE</span><span data-live-time></span><span data-live-location>Location: locating...</span></div>'
+    ticker.innerHTML = '<div class="live-ticker-track"><span>ALBERTO CLOCKS LIVE</span><span data-live-time></span><span data-live-location>Location: Baldia Town, Karachi, Pakistan</span></div>'
     document.body.append(ticker)
 
     const timeElement = ticker.querySelector("[data-live-time]")
@@ -316,20 +316,6 @@ const initialiseTicker = () => {
     updateTime()
     window.setInterval(updateTime, 1000)
 
-    const locationElement = ticker.querySelector("[data-live-location]")
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(
-            ({ coords }) => {
-                locationElement.textContent = `Location: ${coords.latitude.toFixed(2)}, ${coords.longitude.toFixed(2)}`
-            },
-            () => {
-                locationElement.textContent = "Location: unavailable"
-            },
-            { timeout: 8000 }
-        )
-    } else {
-        locationElement.textContent = "Location: unavailable"
-    }
 }
 
 const renderCartPage = () => {
