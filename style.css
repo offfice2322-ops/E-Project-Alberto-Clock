@@ -223,13 +223,39 @@ body {
     }
 
     .category-grid {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        grid-template-rows: 170px 125px;
     }
 
-    .category-tile,
     .category-tile-wide {
-        height: 220px;
+        grid-column: 1 / -1;
+        grid-row: auto;
+    }
+
+    .category-tile {
+        height: auto;
+    }
+
+    .category-copy {
+        bottom: 12px;
+        left: 12px;
+        right: 10px;
+    }
+
+    .category-copy small {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    .category-copy strong {
+        font-size: 14px;
+    }
+
+    .category-copy em {
+        font-size: 10px;
+        margin-top: 5px;
     }
 
 }
@@ -1260,6 +1286,58 @@ body {
 }
 
 @media (max-width: 767px) {
+    .products-section .card {
+        border-radius: 7px;
+    }
+
+    .products-section .carousel-item,
+    .products-section .carousel-item img {
+        height: 220px;
+    }
+
+    .products-section .carousel-item img {
+        padding: 6px;
+    }
+
+    .products-section .card-body {
+        padding: 10px;
+    }
+
+    .products-section .card-title {
+        font-size: 14px;
+    }
+
+    .products-section .card-text {
+        font-size: 12px;
+        line-height: 1.35;
+    }
+
+    .products-section .card-footer {
+        padding-bottom: 10px;
+    }
+
+    .modal-dialog {
+        margin: 0.6rem;
+    }
+
+    .product-modal-content .modal-header,
+    .product-modal-content .modal-body {
+        padding: 0.75rem;
+    }
+
+    .modal-product-grid {
+        gap: 14px;
+    }
+
+    .modal-product-image {
+        height: 190px;
+        padding: 8px;
+    }
+
+    .modal-product-price {
+        font-size: 21px;
+    }
+
     .lineup-heading,
     .store-section,
     .site-footer {
