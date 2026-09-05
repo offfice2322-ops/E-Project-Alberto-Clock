@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brand Watches - Alberto Clocks</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body data-brand-page="true">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="Logo/logo.png" class="logo" alt="Alberto Clocks logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Brand</a>
+                        <ul class="dropdown-menu luxury-dropdown">
+                            <li><a class="dropdown-item" href="brand.html?brand=Rado">Rado</a></li>
+                            <li><a class="dropdown-item" href="brand.html?brand=Rolex">Rolex</a></li>
+                            <li><a class="dropdown-item" href="brand.html?brand=Seiko">Seiko</a></li>
+                            <li><a class="dropdown-item" href="brand.html?brand=Cartier">Cartier</a></li>
+                            <li><a class="dropdown-item" href="brand.html?brand=Citizen">Citizen</a></li>
+                            <li><a class="dropdown-item" href="brand.html?brand=Omega">Omega</a></li>
+                            <li><a class="dropdown-item" href="brand.html?brand=TAG%20Heuer">TAG Heuer</a></li>
+                            <li><a class="dropdown-item" href="brand.html?brand=Tissot">Tissot</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#product-cards">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#technology">Technology</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#store-locator">Store Locator</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#categories">Category</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart <span class="badge rounded-pill bg-warning text-dark" data-cart-count>0</span></a></li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btnsear" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5">
+        <div class="text-center mb-5">
+            <p class="text-warning mb-2">Alberto Clocks Collection</p>
+            <h1 data-product-heading>Brand Watches</h1>
+        </div>
+        <section class="products-section">
+            <div class="row row-cols-2 row-cols-md-3 row-cols-xl-4 g-4" id="product-cards"></div>
+        </section>
+    </main>
+
+    <script src="script.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

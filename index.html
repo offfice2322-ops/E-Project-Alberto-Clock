@@ -1,1546 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>Alberto Clocks - Fine Timepieces</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  
-<nav class="navbar navbar-expand-lg ">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="Logo/logo.png" class="logo" alt=""></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-          <a class="nav-link active" href="#home">
-             Home
-          </a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-                            class="nav-link dropdown-toggle"
-                            href="#"
-                            role="button"
-                            data-bs-toggle="dropdown"
-                        >
-                            Brand
-            </a>
 
-            <ul class="dropdown-menu luxury-dropdown">
+<body>
+
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="Logo/logo.png" class="logo" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Brand
+                        </a>
+
+                        <ul class="dropdown-menu luxury-dropdown">
 
                             <li>
-                                <a class="dropdown-item brand-filter" data-brand="Rolex" href="#">
+                                <a class="dropdown-item brand-filter" data-brand="Rado" href="brand.html?brand=Rado">
                                     Rado
                                 </a>
                             </li>
-                            
+
                             <li>
-                                <a class="dropdown-item brand-filter" data-brand="Rolex" href="#">
+                                <a class="dropdown-item brand-filter" data-brand="Rolex" href="brand.html?brand=Rolex">
                                     Rolex
                                 </a>
                             </li>
 
                             <li>
-                                <a class="dropdown-item brand-filter" data-brand="Patek Philippe" href="#">
+                                <a class="dropdown-item brand-filter" data-brand="Seiko" href="brand.html?brand=Seiko">
                                     Seiko
                                 </a>
                             </li>
 
                             <li>
-                                <a class="dropdown-item brand-filter" data-brand="Hublot" href="#">
+                                <a class="dropdown-item brand-filter" data-brand="Cartier"
+                                    href="brand.html?brand=Cartier">
                                     Cartier
                                 </a>
                             </li>
 
                             <li>
-                                <a class="dropdown-item brand-filter" data-brand="Omega" href="#">
-                                    Casio
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="dropdown-item brand-filter" data-brand="AP" href="#">
+                                <a class="dropdown-item brand-filter" data-brand="Citizen"
+                                    href="brand.html?brand=Citizen">
                                     Citizen
                                 </a>
                             </li>
 
                             <li>
-                                <a class="dropdown-item brand-filter" data-brand="Tag Heuer" href="#">
+                                <a class="dropdown-item brand-filter" data-brand="Omega" href="brand.html?brand=Omega">
                                     Omega
                                 </a>
                             </li>
-
                             <li>
-                                <a class="dropdown-item brand-filter" data-brand="Tissot" href="#">
-                                    Swatch's
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="dropdown-item brand-filter" data-brand="Casio" href="#">
+                                <a class="dropdown-item brand-filter" data-brand="TAG Heuer"
+                                    href="brand.html?brand=TAG%20Heuer">
                                     TAG Heuer
                                 </a>
                             </li>
 
                             <li>
-                                <a class="dropdown-item brand-filter" data-brand="Citizen" href="#">
+                                <a class="dropdown-item brand-filter" data-brand="Tissot"
+                                    href="brand.html?brand=Tissot">
                                     Tissot
                                 </a>
                             </li>
 
                         </ul>
 
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#men">
-              Men Watches
-            </a>
-          </li>
-
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#women">
-                            Women Watches
+                        <a class="nav-link" href="product.html">
+                            Products
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#categories">
-                            Collections
+                        <a class="nav-link" href="#technology">Technology</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#store-locator">Store Locator</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#categories">
+                            Category
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">
+                        <a class="nav-link" href="contact.html">
                             Contact
                         </a>
                     </li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart <span
+                                class="badge rounded-pill bg-warning text-dark" data-cart-count>0</span></a></li>
 
                 </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btnsear" type="submit">Search</button>
-      </form>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btnsear" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+
+    </nav>
+    <div class="announcement-bar">
+        <div class="container-fluid text-center">
+            <div class="announcement-message" role="status">DISCOVER TIMEPIECES THAT DEFINE YOU!</div>
+        </div>
     </div>
-  </div>
-  
-</nav>
-<div class="announcement-bar">
-    <div class="container-fluid text-center">
-      <marquee behavior="" direction="">
-        <i class="bi bi-stars"></i>
-            DISCOVER TIMEPIECES THAT DEFINE YOU!
-            <i class="bi bi-stars"></i>
-      </marquee>
-    </div>
-</div>
-<section class="herosec">
-  <img src="hero.png" class="hero">
-</section>
+    <section class="herosec">
+        <img src="hero.png" class="hero">
+    </section>
     <section class="crdslogo">
-      <div class="row row-cols-1 row-cols-md-4 g-3 m-2">
-        
-   <div class="col">
-    <div class="card h-100 ctrc">
-      <a href="#">
-        <img src="Logo/Rado.png" class="card-img-top" alt="Rado image"></a>
-      <div class="card-body">
-        <a href="#" class="btn centr btn-dark">Rado</a>
+        <div class="row row-cols-2 row-cols-md-3 row-cols-xl-4 g-3 m-2">
+
+            <div class="col">
+                <div class="card h-100 ctrc">
+                    <a href="brand.html?brand=Rado">
+                        <img src="Logo/Rado.png" class="card-img-top" alt="Rado image"></a>
+                    <div class="card-body">
+                        <a href="brand.html?brand=Rado" class="btn centr btn-dark">Rado</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 ctrc">
+                    <a href="brand.html?brand=Rolex">
+                        <img src="Logo/rolex-seeklogo.png" class="card-img-top" alt="rolex image"></a>
+                    <div class="card-body">
+                        <a href="brand.html?brand=Rolex" class="btn centr btn-dark">Rolex</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 ctrc">
+                    <a href="brand.html?brand=Seiko">
+                        <img src="Logo/Seiko.png" class="card-img-top pbig" alt="Audemars_Piguet image"></a>
+                    <div class="card-body">
+                        <a href="brand.html?brand=Seiko" class="btn centr btn-dark">Seiko</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 ctrc">
+                    <a href="brand.html?brand=Cartier">
+                        <img src="Logo/Cartier.png" class="card-img-top pbig" alt="Cartier image"></a>
+                    <div class="card-body">
+                        <a href="brand.html?brand=Cartier" class="btn centr btn-dark">Cartier</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 ctrc">
+                    <a href="brand.html?brand=Citizen">
+                        <img src="Logo/Citizen.png" class="card-img-top" alt="Citizen image"></a>
+                    <div class="card-body">
+                        <a href="brand.html?brand=Citizen" class="btn centr btn-dark">Citizen</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 ctrc">
+                    <a href="brand.html?brand=Omega">
+                        <img src="Logo/Omega.png" class="card-img-top" alt="Omega image"></a>
+                    <div class="card-body">
+                        <a href="brand.html?brand=Omega" class="btn centr btn-dark">Omega</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 ctrc">
+                    <a href="brand.html?brand=TAG%20Heuer">
+                        <img src="Logo/TAG Heuer's.png" class="card-img-top" alt="TAG Heuer's image"></a>
+                    <div class="card-body">
+                        <a href="brand.html?brand=TAG%20Heuer" class="btn centr btn-dark">TAG Heuer's</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 ctrc">
+                    <a href="brand.html?brand=Tissot">
+                        <img src="Logo/Tissot.png" class="card-img-top" alt="Tissot image"></a>
+                    <div class="card-body">
+                        <a href="brand.html?brand=Tissot" class="btn centr btn-dark">Tissot</a>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-  </div>
-   <div class="col">
-    <div class="card h-100 ctrc">
-      <a href="#">
-        <img src="Logo/rolex-seeklogo.png" class="card-img-top" alt="rolex image"></a>
-      <div class="card-body">
-        <a href="#" class="btn centr btn-dark">Rolex</a>
-        </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100 ctrc">
-      <a href="">
-      <img src="Logo/Seiko.png" class="card-img-top pbig" alt="Audemars_Piguet image"></a>
-      <div class="card-body">
-        <a href="#" class="btn centr btn-dark">Seiko</a>
-        </div>
-    </div>
-  </div>
-   <div class="col">
-    <div class="card h-100 ctrc">
-      <a href="#">
-        <img src="Logo/Cartier.png" class="card-img-top pbig" alt="Cartier image"></a>
-      <div class="card-body">
-        <a href="#" class="btn centr btn-dark">Cartier</a>
-        </div>
-    </div>
-  </div>
-   <div class="col">
-    <div class="card h-100 ctrc">
-      <a href="#">
-        <img src="Logo/Citizen.png" class="card-img-top" alt="Citizen image"></a>
-      <div class="card-body">
-        <a href="#" class="btn centr btn-dark">Citizen</a>
-        </div>
-    </div>
-  </div>
-   <div class="col">
-    <div class="card h-100 ctrc">
-      <a href="#">
-        <img src="Logo/Omega.png" class="card-img-top" alt="Omega image"></a>
-      <div class="card-body">
-        <a href="#" class="btn centr btn-dark">Omega</a>
-        </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100 ctrc">
-      <a href="#">
-        <img src="Logo/TAG Heuer's.png" class="card-img-top" alt="TAG Heuer's image"></a>
-      <div class="card-body">
-        <a href="#" class="btn centr btn-dark">TAG Heuer's</a>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100 ctrc">
-      <a href="#">
-        <img src="Logo/Tissot.png" class="card-img-top" alt="Tissot image"></a>
-      <div class="card-body">
-        <a href="#" class="btn centr btn-dark">Tissot</a>
-        </div>
-    </div>
-  </div>
-</div>
     </section>
- <div class="container-fluid text-center">
-      <marquee behavior="" direction="">
-        <i class="bi bi-stars"></i>
-            DISCOVER TIMEPIECES THAT DEFINE YOU!
-            <i class="bi bi-stars"></i>
-      </marquee>
+    <div class="container-fluid text-center">
+        <div class="announcement-message" role="status">DISCOVER TIMEPIECES THAT DEFINE YOU!</div>
     </div>
-    
-<section class="products-section">
-    <div class="row row-cols-1 row-cols-md-5 m-2 g-4">
-        <!-- PRODUCT 1 -->
-        <div class="col">
-            <div class="card h-100">
-                <div id="watchCarousel1" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#watchCarousel1" data-bs-slide-to="0" class="active"></button>
-                        <button type="button" data-bs-target="#watchCarousel1" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#watchCarousel1" data-bs-slide-to="2"></button>
-                        <button type="button" data-bs-target="#watchCarousel1" data-bs-slide-to="3"></button>
-                    </div>
 
-                    <div class="carousel-inner">
-
-                        <div class="carousel-item active">
-                            <img src="Pic/116719BLRO-1.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/116719BLRO-2.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/116719BLRO-3.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M127697_1.jfif" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                    </div>
-
-                    <button class="carousel-control-prev" type="button"
-                            data-bs-target="#watchCarousel1" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-
-                    <button class="carousel-control-next" type="button"
-                            data-bs-target="#watchCarousel1" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-
-                </div>
-
-                <div class="card-body">
-                    <h5 class="card-title">Rado HyperChrome</h5>
-                    <p class="card-text">
-                        Rado True Round 40mm High-Tech Ceramic Skeleton Automatic Watch
-                    </p>
-                </div>
-
-                <div class="card-footer">
-                    <a href="#" class="btn btn-primary w-100">View Details</a>
-                </div>
-
+    <section class="lineup-section" id="lineups">
+        <div class="lineup-heading">
+            <div>
+                <p class="section-kicker">Curated product line-up</p>
+                <h1>Find your timepiece</h1>
             </div>
+            <p class="lineup-note">Select a line-up to see every watch in that collection.</p>
         </div>
-
-
-        <!-- PRODUCT 2 -->
-        <div class="col">
-            <div class="card h-100">
-
-                <div id="watchCarousel2" class="carousel carousel-dark slide" data-bs-ride="carousel">
-
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#watchCarousel2" data-bs-slide-to="0" class="active"></button>
-                        <button type="button" data-bs-target="#watchCarousel2" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#watchCarousel2" data-bs-slide-to="2"></button>
-                        <button type="button" data-bs-target="#watchCarousel2" data-bs-slide-to="3"></button>
-                    </div>
-
-                    <div class="carousel-inner">
-
-                        <div class="carousel-item active">
-                            <img src="Pic/M127697_1.jfif" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M121797_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M150269_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M127697_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                    </div>
-
-                    <button class="carousel-control-prev" type="button"
-                            data-bs-target="#watchCarousel2" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-
-                    <button class="carousel-control-next" type="button"
-                            data-bs-target="#watchCarousel2" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-
-                </div>
-
-                <div class="card-body">
-                    <h5 class="card-title">Rado HyperChrome</h5>
-                    <p class="card-text">
-                        Rado HyperChrome 44.9mm Titanium Chronograph Men's Watch
-                    </p>
-                </div>
-
-                <div class="card-footer">
-                    <a href="#" class="btn btn-primary w-100">View Details</a>
-                </div>
-
-            </div>
+        <div class="lineup-controls" role="group" aria-label="Product line-ups">
+            <button type="button" class="lineup-filter active" data-lineup="all">All Watches</button>
+            <button type="button" class="lineup-filter" data-lineup="Vintage">Vintage</button>
+            <button type="button" class="lineup-filter" data-lineup="Luxury">Luxury</button>
+            <button type="button" class="lineup-filter" data-lineup="Smart Watches">Smart Watches</button>
+            <button type="button" class="lineup-filter" data-lineup="Sport">Sport</button>
         </div>
-
-
-        <!-- PRODUCT 3 -->
-        <div class="col">
-            <div class="card h-100">
-
-                <div id="watchCarousel3" class="carousel carousel-dark slide" data-bs-ride="carousel">
-
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#watchCarousel3" data-bs-slide-to="0" class="active"></button>
-                        <button type="button" data-bs-target="#watchCarousel3" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#watchCarousel3" data-bs-slide-to="2"></button>
-                        <button type="button" data-bs-target="#watchCarousel3" data-bs-slide-to="3"></button>
-                    </div>
-
-                    <div class="carousel-inner">
-
-                        <div class="carousel-item active">
-                            <img src="Pic/M127697_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M121797_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M150269_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M127697_1.jfif" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                    </div>
-
-                    <button class="carousel-control-prev" type="button"
-                            data-bs-target="#watchCarousel3" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-
-                    <button class="carousel-control-next" type="button"
-                            data-bs-target="#watchCarousel3" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-
-                </div>
-
-                <div class="card-body">
-                    <h5 class="card-title">Rado HyperChrome</h5>
-                    <p class="card-text">
-                        Rado HyperChrome 44.9mm Titanium Chronograph Men's Watch
-                    </p>
-                </div>
-
-                <div class="card-footer">
-                    <a href="#" class="btn btn-primary w-100">View Details</a>
-                </div>
-
-            </div>
-        </div>
-
-
-        <!-- PRODUCT 4 -->
-        <div class="col">
-            <div class="card h-100">
-
-                <div id="watchCarousel4" class="carousel carousel-dark slide" data-bs-ride="carousel">
-
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#watchCarousel4" data-bs-slide-to="0" class="active"></button>
-                        <button type="button" data-bs-target="#watchCarousel4" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#watchCarousel4" data-bs-slide-to="2"></button>
-                        <button type="button" data-bs-target="#watchCarousel4" data-bs-slide-to="3"></button>
-                    </div>
-
-                    <div class="carousel-inner">
-
-                        <div class="carousel-item active">
-                            <img src="Pic/18305822_1.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/18305822_2.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/18305822_3.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/18305822_4.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                    </div>
-
-                    <button class="carousel-control-prev" type="button"
-                            data-bs-target="#watchCarousel4" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-
-                    <button class="carousel-control-next" type="button"
-                            data-bs-target="#watchCarousel4" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-
-                </div>
-
-                <div class="card-body">
-                    <h5 class="card-title">Rado HyperChrome</h5>
-                    <p class="card-text">
-                        Rado HyperChrome 44.9mm Titanium Chronograph Men's Watch
-                    </p>
-                </div>
-
-                <div class="card-footer">
-                    <a href="#" class="btn btn-primary w-100">View Details</a>
-                </div>
-
-            </div>
-        </div>
-
-
-        <!-- PRODUCT 5 -->
-        <div class="col">
-            <div class="card h-100">
-
-                <div id="watchCarousel5" class="carousel carousel-dark slide" data-bs-ride="carousel">
-
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#watchCarousel5" data-bs-slide-to="0" class="active"></button>
-                        <button type="button" data-bs-target="#watchCarousel5" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#watchCarousel5" data-bs-slide-to="2"></button>
-                        <button type="button" data-bs-target="#watchCarousel5" data-bs-slide-to="3"></button>
-                    </div>
-
-                    <div class="carousel-inner">
-
-                        <div class="carousel-item active">
-                            <img src="Pic/M127697_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M121797_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M150269_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M127697_1.jfif" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                    </div>
-
-                    <button class="carousel-control-prev" type="button"
-                            data-bs-target="#watchCarousel5" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-
-                    <button class="carousel-control-next" type="button"
-                            data-bs-target="#watchCarousel5" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-
-                </div>
-
-                <div class="card-body">
-                    <h5 class="card-title">Rado HyperChrome</h5>
-                    <p class="card-text">
-                        Rado HyperChrome 44.9mm Titanium Chronograph Men's Watch
-                    </p>
-                </div>
-
-                <div class="card-footer">
-                    <a href="#" class="btn btn-primary w-100">View Details</a>
-                </div>
-
-            </div>
-        </div>
-
-
-        <!-- PRODUCT 6 -->
-        <div class="col">
-            <div class="card h-100">
-
-                <div id="watchCarousel6" class="carousel carousel-dark slide" data-bs-ride="carousel">
-
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#watchCarousel6" data-bs-slide-to="0" class="active"></button>
-                        <button type="button" data-bs-target="#watchCarousel6" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#watchCarousel6" data-bs-slide-to="2"></button>
-                        <button type="button" data-bs-target="#watchCarousel6" data-bs-slide-to="3"></button>
-                    </div>
-
-                    <div class="carousel-inner">
-
-                        <div class="carousel-item active">
-                            <img src="Pic/M127697_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M121797_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M150269_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M127697_1.jfif" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                    </div>
-
-                    <button class="carousel-control-prev" type="button"
-                            data-bs-target="#watchCarousel6" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-
-                    <button class="carousel-control-next" type="button"
-                            data-bs-target="#watchCarousel6" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-
-                </div>
-
-                <div class="card-body">
-                    <h5 class="card-title">Rado HyperChrome</h5>
-                    <p class="card-text">
-                        Rado HyperChrome 44.9mm Titanium Chronograph Men's Watch
-                    </p>
-                </div>
-
-                <div class="card-footer">
-                    <a href="#" class="btn btn-primary w-100">View Details</a>
-                </div>
-
-            </div>
-        </div>
-
-
-        <!-- PRODUCT 7 -->
-        <div class="col">
-            <div class="card h-100">
-
-                <div id="watchCarousel7" class="carousel carousel-dark slide" data-bs-ride="carousel">
-
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#watchCarousel7" data-bs-slide-to="0" class="active"></button>
-                        <button type="button" data-bs-target="#watchCarousel7" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#watchCarousel7" data-bs-slide-to="2"></button>
-                        <button type="button" data-bs-target="#watchCarousel7" data-bs-slide-to="3"></button>
-                    </div>
-
-                    <div class="carousel-inner">
-
-                        <div class="carousel-item active">
-                            <img src="Pic/M127697_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M121797_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M150269_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M127697_1.jfif" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                    </div>
-
-                    <button class="carousel-control-prev" type="button"
-                            data-bs-target="#watchCarousel7" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-
-                    <button class="carousel-control-next" type="button"
-                            data-bs-target="#watchCarousel7" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-
-                </div>
-
-                <div class="card-body">
-                    <h5 class="card-title">Rado HyperChrome</h5>
-                    <p class="card-text">
-                        Rado HyperChrome 44.9mm Titanium Chronograph Men's Watch
-                    </p>
-                </div>
-
-                <div class="card-footer">
-                    <a href="#" class="btn btn-primary w-100">View Details</a>
-                </div>
-
-            </div>
-        </div>
-
-
-        <!-- PRODUCT 8 -->
-        <div class="col">
-            <div class="card h-100">
-
-                <div id="watchCarousel8" class="carousel carousel-dark slide" data-bs-ride="carousel">
-
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#watchCarousel8" data-bs-slide-to="0" class="active"></button>
-                        <button type="button" data-bs-target="#watchCarousel8" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#watchCarousel8" data-bs-slide-to="2"></button>
-                        <button type="button" data-bs-target="#watchCarousel8" data-bs-slide-to="3"></button>
-                    </div>
-
-                    <div class="carousel-inner">
-
-                        <div class="carousel-item active">
-                            <img src="Pic/M127697_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M121797_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M150269_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M127697_1.jfif" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                    </div>
-
-                    <button class="carousel-control-prev" type="button"
-                            data-bs-target="#watchCarousel8" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-
-                    <button class="carousel-control-next" type="button"
-                            data-bs-target="#watchCarousel8" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-
-                </div>
-
-                <div class="card-body">
-                    <h5 class="card-title">Rado HyperChrome</h5>
-                    <p class="card-text">
-                        Rado HyperChrome 44.9mm Titanium Chronograph Men's Watch
-                    </p>
-                </div>
-
-                <div class="card-footer">
-                    <a href="#" class="btn btn-primary w-100">View Details</a>
-                </div>
-
-            </div>
-        </div>
-
-
-        <!-- PRODUCT 9 -->
-        <div class="col">
-            <div class="card h-100">
-
-                <div id="watchCarousel9" class="carousel carousel-dark slide" data-bs-ride="carousel">
-
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#watchCarousel9" data-bs-slide-to="0" class="active"></button>
-                        <button type="button" data-bs-target="#watchCarousel9" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#watchCarousel9" data-bs-slide-to="2"></button>
-                        <button type="button" data-bs-target="#watchCarousel9" data-bs-slide-to="3"></button>
-                    </div>
-
-                    <div class="carousel-inner">
-
-                        <div class="carousel-item active">
-                            <img src="Pic/M127697_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M121797_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M150269_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M127697_1.jfif" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                    </div>
-
-                    <button class="carousel-control-prev" type="button"
-                            data-bs-target="#watchCarousel9" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-
-                    <button class="carousel-control-next" type="button"
-                            data-bs-target="#watchCarousel9" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-
-                </div>
-
-                <div class="card-body">
-                    <h5 class="card-title">Rado HyperChrome</h5>
-                    <p class="card-text">
-                        Rado HyperChrome 44.9mm Titanium Chronograph Men's Watch
-                    </p>
-                </div>
-
-                <div class="card-footer">
-                    <a href="#" class="btn btn-primary w-100">View Details</a>
-                </div>
-
-            </div>
-        </div>
-
-
-        <!-- PRODUCT 10 -->
-        <div class="col">
-            <div class="card h-100">
-
-                <div id="watchCarousel10" class="carousel carousel-dark slide" data-bs-ride="carousel">
-
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#watchCarousel10" data-bs-slide-to="0" class="active"></button>
-                        <button type="button" data-bs-target="#watchCarousel10" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#watchCarousel10" data-bs-slide-to="2"></button>
-                        <button type="button" data-bs-target="#watchCarousel10" data-bs-slide-to="3"></button>
-                    </div>
-
-                    <div class="carousel-inner">
-
-                        <div class="carousel-item active">
-                            <img src="Pic/M127697_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M121797_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M150269_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M127697_1.jfif" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                    </div>
-
-                    <button class="carousel-control-prev" type="button"
-                            data-bs-target="#watchCarousel10" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-
-                    <button class="carousel-control-next" type="button"
-                            data-bs-target="#watchCarousel10" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-
-                </div>
-
-                <div class="card-body">
-                    <h5 class="card-title">Rado HyperChrome</h5>
-                    <p class="card-text">
-                        Rado HyperChrome 44.9mm Titanium Chronograph Men's Watch
-                    </p>
-                </div>
-
-                <div class="card-footer">
-                    <a href="#" class="btn btn-primary w-100">View Details</a>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-</section>
-<section class="products-section">
-
-    <div class="row row-cols-1 row-cols-md-5 m-2 g-4">
-
-        <!-- PRODUCT 1 -->
-        <div class="col">
-            <div class="card h-100">
-
-                <div id="watchCarousel1" class="carousel carousel-dark slide" data-bs-ride="carousel">
-
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#watchCarousel1" data-bs-slide-to="0" class="active"></button>
-                        <button type="button" data-bs-target="#watchCarousel1" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#watchCarousel1" data-bs-slide-to="2"></button>
-                        <button type="button" data-bs-target="#watchCarousel1" data-bs-slide-to="3"></button>
-                    </div>
-
-                    <div class="carousel-inner">
-
-                        <div class="carousel-item active">
-                            <img src="Pic/M127697_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M121797_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M150269_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M127697_1.jfif" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                    </div>
-
-                    <button class="carousel-control-prev" type="button"
-                            data-bs-target="#watchCarousel1" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-
-                    <button class="carousel-control-next" type="button"
-                            data-bs-target="#watchCarousel1" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-
-                </div>
-
-                <div class="card-body">
-                    <h5 class="card-title">Rado HyperChrome</h5>
-                    <p class="card-text">
-                        Rado True Round 40mm High-Tech Ceramic Skeleton Automatic Watch
-                    </p>
-                </div>
-
-                <div class="card-footer">
-                    <a href="#" class="btn btn-primary w-100">View Details</a>
-                </div>
-
-            </div>
-        </div>
-
-
-        <!-- PRODUCT 2 -->
-        <div class="col">
-            <div class="card h-100">
-
-                <div id="watchCarousel2" class="carousel carousel-dark slide" data-bs-ride="carousel">
-
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#watchCarousel2" data-bs-slide-to="0" class="active"></button>
-                        <button type="button" data-bs-target="#watchCarousel2" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#watchCarousel2" data-bs-slide-to="2"></button>
-                        <button type="button" data-bs-target="#watchCarousel2" data-bs-slide-to="3"></button>
-                    </div>
-
-                    <div class="carousel-inner">
-
-                        <div class="carousel-item active">
-                            <img src="Pic/M127697_1.jfif" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M121797_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M150269_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M127697_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                    </div>
-
-                    <button class="carousel-control-prev" type="button"
-                            data-bs-target="#watchCarousel2" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-
-                    <button class="carousel-control-next" type="button"
-                            data-bs-target="#watchCarousel2" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-
-                </div>
-
-                <div class="card-body">
-                    <h5 class="card-title">Rado HyperChrome</h5>
-                    <p class="card-text">
-                        Rado HyperChrome 44.9mm Titanium Chronograph Men's Watch
-                    </p>
-                </div>
-
-                <div class="card-footer">
-                    <a href="#" class="btn btn-primary w-100">View Details</a>
-                </div>
-
-            </div>
-        </div>
-
-
-        <!-- PRODUCT 3 -->
-        <div class="col">
-            <div class="card h-100">
-
-                <div id="watchCarousel3" class="carousel carousel-dark slide" data-bs-ride="carousel">
-
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#watchCarousel3" data-bs-slide-to="0" class="active"></button>
-                        <button type="button" data-bs-target="#watchCarousel3" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#watchCarousel3" data-bs-slide-to="2"></button>
-                        <button type="button" data-bs-target="#watchCarousel3" data-bs-slide-to="3"></button>
-                    </div>
-
-                    <div class="carousel-inner">
-
-                        <div class="carousel-item active">
-                            <img src="Pic/M127697_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M121797_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M150269_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M127697_1.jfif" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                    </div>
-
-                    <button class="carousel-control-prev" type="button"
-                            data-bs-target="#watchCarousel3" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-
-                    <button class="carousel-control-next" type="button"
-                            data-bs-target="#watchCarousel3" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-
-                </div>
-
-                <div class="card-body">
-                    <h5 class="card-title">Rado HyperChrome</h5>
-                    <p class="card-text">
-                        Rado HyperChrome 44.9mm Titanium Chronograph Men's Watch
-                    </p>
-                </div>
-
-                <div class="card-footer">
-                    <a href="#" class="btn btn-primary w-100">View Details</a>
-                </div>
-
-            </div>
-        </div>
-
-
-        <!-- PRODUCT 4 -->
-        <div class="col">
-            <div class="card h-100">
-
-                <div id="watchCarousel4" class="carousel carousel-dark slide" data-bs-ride="carousel">
-
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#watchCarousel4" data-bs-slide-to="0" class="active"></button>
-                        <button type="button" data-bs-target="#watchCarousel4" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#watchCarousel4" data-bs-slide-to="2"></button>
-                        <button type="button" data-bs-target="#watchCarousel4" data-bs-slide-to="3"></button>
-                    </div>
-
-                    <div class="carousel-inner">
-
-                        <div class="carousel-item active">
-                            <img src="Pic/18305822_1.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/18305822_2.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/18305822_3.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/18305822_4.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                    </div>
-
-                    <button class="carousel-control-prev" type="button"
-                            data-bs-target="#watchCarousel4" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-
-                    <button class="carousel-control-next" type="button"
-                            data-bs-target="#watchCarousel4" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-
-                </div>
-
-                <div class="card-body">
-                    <h5 class="card-title">Rado HyperChrome</h5>
-                    <p class="card-text">
-                        Rado HyperChrome 44.9mm Titanium Chronograph Men's Watch
-                    </p>
-                </div>
-
-                <div class="card-footer">
-                    <a href="#" class="btn btn-primary w-100">View Details</a>
-                </div>
-
-            </div>
-        </div>
-
-
-        <!-- PRODUCT 5 -->
-        <div class="col">
-            <div class="card h-100">
-
-                <div id="watchCarousel5" class="carousel carousel-dark slide" data-bs-ride="carousel">
-
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#watchCarousel5" data-bs-slide-to="0" class="active"></button>
-                        <button type="button" data-bs-target="#watchCarousel5" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#watchCarousel5" data-bs-slide-to="2"></button>
-                        <button type="button" data-bs-target="#watchCarousel5" data-bs-slide-to="3"></button>
-                    </div>
-
-                    <div class="carousel-inner">
-
-                        <div class="carousel-item active">
-                            <img src="Pic/M127697_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M121797_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M150269_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M127697_1.jfif" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                    </div>
-
-                    <button class="carousel-control-prev" type="button"
-                            data-bs-target="#watchCarousel5" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-
-                    <button class="carousel-control-next" type="button"
-                            data-bs-target="#watchCarousel5" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-
-                </div>
-
-                <div class="card-body">
-                    <h5 class="card-title">Rado HyperChrome</h5>
-                    <p class="card-text">
-                        Rado HyperChrome 44.9mm Titanium Chronograph Men's Watch
-                    </p>
-                </div>
-
-                <div class="card-footer">
-                    <a href="#" class="btn btn-primary w-100">View Details</a>
-                </div>
-
-            </div>
-        </div>
-
-
-        <!-- PRODUCT 6 -->
-        <div class="col">
-            <div class="card h-100">
-
-                <div id="watchCarousel6" class="carousel carousel-dark slide" data-bs-ride="carousel">
-
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#watchCarousel6" data-bs-slide-to="0" class="active"></button>
-                        <button type="button" data-bs-target="#watchCarousel6" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#watchCarousel6" data-bs-slide-to="2"></button>
-                        <button type="button" data-bs-target="#watchCarousel6" data-bs-slide-to="3"></button>
-                    </div>
-
-                    <div class="carousel-inner">
-
-                        <div class="carousel-item active">
-                            <img src="Pic/M127697_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M121797_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M150269_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M127697_1.jfif" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                    </div>
-
-                    <button class="carousel-control-prev" type="button"
-                            data-bs-target="#watchCarousel6" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-
-                    <button class="carousel-control-next" type="button"
-                            data-bs-target="#watchCarousel6" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-
-                </div>
-
-                <div class="card-body">
-                    <h5 class="card-title">Rado HyperChrome</h5>
-                    <p class="card-text">
-                        Rado HyperChrome 44.9mm Titanium Chronograph Men's Watch
-                    </p>
-                </div>
-
-                <div class="card-footer">
-                    <a href="#" class="btn btn-primary w-100">View Details</a>
-                </div>
-
-            </div>
-        </div>
-
-
-        <!-- PRODUCT 7 -->
-        <div class="col">
-            <div class="card h-100">
-
-                <div id="watchCarousel7" class="carousel carousel-dark slide" data-bs-ride="carousel">
-
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#watchCarousel7" data-bs-slide-to="0" class="active"></button>
-                        <button type="button" data-bs-target="#watchCarousel7" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#watchCarousel7" data-bs-slide-to="2"></button>
-                        <button type="button" data-bs-target="#watchCarousel7" data-bs-slide-to="3"></button>
-                    </div>
-
-                    <div class="carousel-inner">
-
-                        <div class="carousel-item active">
-                            <img src="Pic/M127697_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M121797_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M150269_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M127697_1.jfif" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                    </div>
-
-                    <button class="carousel-control-prev" type="button"
-                            data-bs-target="#watchCarousel7" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-
-                    <button class="carousel-control-next" type="button"
-                            data-bs-target="#watchCarousel7" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-
-                </div>
-
-                <div class="card-body">
-                    <h5 class="card-title">Rado HyperChrome</h5>
-                    <p class="card-text">
-                        Rado HyperChrome 44.9mm Titanium Chronograph Men's Watch
-                    </p>
-                </div>
-
-                <div class="card-footer">
-                    <a href="#" class="btn btn-primary w-100">View Details</a>
-                </div>
-
-            </div>
-        </div>
-
-
-        <!-- PRODUCT 8 -->
-        <div class="col">
-            <div class="card h-100">
-
-                <div id="watchCarousel8" class="carousel carousel-dark slide" data-bs-ride="carousel">
-
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#watchCarousel8" data-bs-slide-to="0" class="active"></button>
-                        <button type="button" data-bs-target="#watchCarousel8" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#watchCarousel8" data-bs-slide-to="2"></button>
-                        <button type="button" data-bs-target="#watchCarousel8" data-bs-slide-to="3"></button>
-                    </div>
-
-                    <div class="carousel-inner">
-
-                        <div class="carousel-item active">
-                            <img src="Pic/M127697_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M121797_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M150269_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M127697_1.jfif" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                    </div>
-
-                    <button class="carousel-control-prev" type="button"
-                            data-bs-target="#watchCarousel8" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-
-                    <button class="carousel-control-next" type="button"
-                            data-bs-target="#watchCarousel8" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-
-                </div>
-
-                <div class="card-body">
-                    <h5 class="card-title">Rado HyperChrome</h5>
-                    <p class="card-text">
-                        Rado HyperChrome 44.9mm Titanium Chronograph Men's Watch
-                    </p>
-                </div>
-
-                <div class="card-footer">
-                    <a href="#" class="btn btn-primary w-100">View Details</a>
-                </div>
-
-            </div>
-        </div>
-
-
-        <!-- PRODUCT 9 -->
-        <div class="col">
-            <div class="card h-100">
-
-                <div id="watchCarousel9" class="carousel carousel-dark slide" data-bs-ride="carousel">
-
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#watchCarousel9" data-bs-slide-to="0" class="active"></button>
-                        <button type="button" data-bs-target="#watchCarousel9" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#watchCarousel9" data-bs-slide-to="2"></button>
-                        <button type="button" data-bs-target="#watchCarousel9" data-bs-slide-to="3"></button>
-                    </div>
-
-                    <div class="carousel-inner">
-
-                        <div class="carousel-item active">
-                            <img src="Pic/M127697_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M121797_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M150269_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M127697_1.jfif" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                    </div>
-
-                    <button class="carousel-control-prev" type="button"
-                            data-bs-target="#watchCarousel9" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-
-                    <button class="carousel-control-next" type="button"
-                            data-bs-target="#watchCarousel9" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-
-                </div>
-
-                <div class="card-body">
-                    <h5 class="card-title">Rado HyperChrome</h5>
-                    <p class="card-text">
-                        Rado HyperChrome 44.9mm Titanium Chronograph Men's Watch
-                    </p>
-                </div>
-
-                <div class="card-footer">
-                    <a href="#" class="btn btn-primary w-100">View Details</a>
-                </div>
-
-            </div>
-        </div>
-
-
-        <!-- PRODUCT 10 -->
-        <div class="col">
-            <div class="card h-100">
-
-                <div id="watchCarousel10" class="carousel carousel-dark slide" data-bs-ride="carousel">
-
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#watchCarousel10" data-bs-slide-to="0" class="active"></button>
-                        <button type="button" data-bs-target="#watchCarousel10" data-bs-slide-to="1"></button>
-                        <button type="button" data-bs-target="#watchCarousel10" data-bs-slide-to="2"></button>
-                        <button type="button" data-bs-target="#watchCarousel10" data-bs-slide-to="3"></button>
-                    </div>
-
-                    <div class="carousel-inner">
-
-                        <div class="carousel-item active">
-                            <img src="Pic/M127697_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M121797_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M150269_0.webp" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                        <div class="carousel-item">
-                            <img src="Pic/M127697_1.jfif" class="d-block w-100" alt="Rado HyperChrome">
-                        </div>
-
-                    </div>
-
-                    <button class="carousel-control-prev" type="button"
-                            data-bs-target="#watchCarousel10" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-
-                    <button class="carousel-control-next" type="button"
-                            data-bs-target="#watchCarousel10" data-bs-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-
-                </div>
-
-                <div class="card-body">
-                    <h5 class="card-title">Rado HyperChrome</h5>
-                    <p class="card-text">
-                        Rado HyperChrome 44.9mm Titanium Chronograph Men's Watch
-                    </p>
-                </div>
-
-                <div class="card-footer">
-                    <a href="#" class="btn btn-primary w-100">View Details</a>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-</section>
-
- <div class="container-fluid text-center">
-      <marquee behavior="" direction="">
-        <i class="bi bi-stars"></i>
-            DISCOVER TIMEPIECES THAT DEFINE YOU!
-            <i class="bi bi-stars"></i>
-      </marquee>
-    </div>
-    <h1>Shop by Category</h1>
-    <section class="">
-     <div class="row row-cols-1 row-cols-md-4 m-2 g-4">
-  <div class="col">
-    <div class="card h-100">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-    </section>
-<br>
-<br>
-
-    <section class="bottom">
-      <div class="botm">
-        <h1>Why trust us!</h1>
-<p>Your trust is our crown—<b>and we protect it with every order.</b></p>
-<p>At <strong>Alberto Clock</strong>, every watch we offer is hand-inspected, authenticity-verified, and sourced from trusted suppliers around the world.</p>
-
-<p>We built our reputation on <strong>honesty, precision, and exceptional service,</strong> ensuring every customer receives a product that matches the luxury they expect.</p>
-      </div>
     </section>
 
+    <h1 data-product-heading style="text-align: center;">All Watches</h1>
+    <section class="products-section">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-xl-4 m-2 g-4" id="product-cards">
+
+        </div>
+        <!-- <div class="text-center mt-4 d-flex justify-content-center gap-2">
+            <button type="button" id="load-more-products" class="btn btn-gold">More</button>
+            <button type="button" id="load-less-products" class="btn btn-outline-light"
+                style="display: none;">Less</button>
+        </div> -->
+    </section>
+
+    <section class="category-section" id="categories">
+        <div class="category-heading">
+            <div>
+                <p class="section-kicker">Find your signature</p>
+                <h1>Shop by Category</h1>
+            </div>
+            <a href="#product-cards" class="category-view-all" data-show-all-products="true">View all watches <span
+                    aria-hidden="true">&#8594;</span></a>
+        </div>
+        <div class="category-grid">
+            <a class="category-tile category-tile-wide" href="brand.html?brand=Rolex">
+                <img src="Pic/Rolex/216570-1.webp" alt="Rolex heritage watches">
+                <span class="category-overlay"></span>
+                <span class="category-copy"><small>Timeless icons</small><strong>Heritage Classics</strong><em>Explore
+                        Rolex</em></span>
+            </a>
+            <a class="category-tile" href="brand.html?brand=TAG%20Heuer">
+                <img src="Pic/TAG Heuer/CAZ101AL-1.webp" alt="TAG Heuer sport watches">
+                <span class="category-overlay"></span>
+                <span class="category-copy"><small>Made to move</small><strong>Sport Chronographs</strong><em>Explore
+                        TAG Heuer</em></span>
+            </a>
+            <a class="category-tile" href="brand.html?brand=Rado">
+                <img src="Pic/Rado/M109652_1.jfif" alt="Rado contemporary watches">
+                <span class="category-overlay"></span>
+                <span class="category-copy"><small>Modern precision</small><strong>Contemporary
+                        Luxury</strong><em>Explore Rado</em></span>
+            </a>
+            <a class="category-tile" href="brand.html?brand=Cartier">
+                <img src="Pic/Cartier/XL2618-1.jfif" alt="Cartier dress watches">
+                <span class="category-overlay"></span>
+                <span class="category-copy"><small>Quiet refinement</small><strong>Dress Watches</strong><em>Explore
+                        Cartier</em></span>
+            </a>
+        </div>
+    </section>
+
+    <section class="technology-section">
+        <h1 id="technology" class="technology-heading">Technology</h1>
+        <div class="information-section">
+        <div>
+            <p class="section-kicker">Inside the craft</p>
+            <h2>Technology that keeps time beautifully.</h2>
+        </div>
+        <div class="information-grid">
+            <article>
+                <span class="info-number">01</span>
+                <h3>Precision quartz</h3>
+                <p>Battery-powered movements deliver dependable accuracy with minimal maintenance.</p>
+            </article>
+            <article>
+                <span class="info-number">02</span>
+                <h3>Automatic calibre</h3>
+                <p>Mechanical movements turn the energy of your wrist into a lasting reserve of motion.</p>
+            </article>
+            <article>
+                <span class="info-number">03</span>
+                <h3>Connected intelligence</h3>
+                <p>Modern sensor systems pair useful notifications and activity tracking with familiar watch design.</p>
+            </article>
+        </div>
+    </div>
+    </section>
+
+    <section class="store-section" id="store-locator">
+        <h1 class="technology-heading">Store Locator</h1>
+        <div>
+            <p class="section-kicker">Visit Alberto Clocks Store </p>
+            <h2>See the collection in person.</h2>
+            <p>Our Baldia Town showroom team can help you compare movements, sizes, and finishes before you choose.</p>
+        </div>
+        <address>
+            <strong>Alberto Clocks Showroom</strong><br>
+            Shop# 84 K.S. Mujahid Khan Road<br>
+            Baldia Town Karachi, Pakistan<br>
+            <a href="tel:03422850943">Mob: 0342-2850943</a>
+        </address>
+    </section>
+    <br>
+    <br>
+
+    <section class="bottom" id="about">
+        <div class="botm">
+            <h1>Why trust us!</h1>
+            <p>Your trust is our crown—<b>and we protect it with every order.</b></p>
+            <p>At <strong>Alberto Clock</strong>, every watch we offer is hand-inspected, authenticity-verified, and
+                sourced from trusted suppliers around the world.</p>
+
+            <p>We built our reputation on <strong>honesty, precision, and exceptional service,</strong> ensuring every
+                customer receives a product that matches the luxury they expect.</p>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <strong>Alberto Clocks</strong>
+        <nav aria-label="Footer navigation">
+            <a href="#categories">Site Map</a>
+            <a href="#product-cards">Gallery</a>
+            <a href="#about">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </footer>
+
+    <div class="modal fade" id="product-details-modal" tabindex="-1" aria-labelledby="product-details-title"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content product-modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="product-details-title">Watch details</h2>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="product-details-body"></div>
+            </div>
+        </div>
+    </div>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="script.js" type="module">
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
