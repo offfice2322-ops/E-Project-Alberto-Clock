@@ -581,16 +581,17 @@ body {
     min-width: 0;
 }
 
-#product-detail .row {
-    display: flex;
-    flex-wrap: nowrap;
+#product-detail .detail-image-gallery {
     align-items: stretch;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#product-detail .col-md-4,
-#product-detail .col-6 {
+#product-detail .detail-image-gallery .col-6 {
     display: flex;
     align-items: stretch;
+    flex: 0 0 50%;
+    max-width: 50%;
 }
 
 .cart-product-image {

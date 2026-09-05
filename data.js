@@ -507,7 +507,7 @@ export const products = [
         price: 1190,
         desc: "A versatile Tissot model with a refined finish and strong proportions.",
         thumbnail: "Pic/Tissot/M142566-1.jfif",
-        images: ["Pic/Tissot/M142566-1.jfif", "Pic/Tissot/M142566-2.jfif", "Pic/Tissot/M142566-4.jfif", "Pic/Tissot/M142566-5.jfif"]
+        images: ["Pic/Tissot/M142566-1.jfif", "Pic/Tissot/M142566-2.jfif", "Pic/Tissot/M142566-3.jfif", "Pic/Tissot/M142566-4.jfif", "Pic/Tissot/M142566-5.jfif"]
     },
     {
         id: 48,
@@ -516,7 +516,7 @@ export const products = [
         price: 1215,
         desc: "Tissot elegance with a polished finish and premium presentation.",
         thumbnail: "Pic/Tissot/M151899-1.jfif",
-        images: ["Pic/Tissot/M151899-1.jfif", "Pic/Tissot/M151899-2.jfif", "Pic/Tissot/M151899-3.jfif", "Pic/Tissot/M151899-4.jfif"]
+        images: ["Pic/Tissot/M151899-1.jfif", "Pic/Tissot/M151899-2.jfif", "Pic/Tissot/M151899-3.jfif", "Pic/Tissot/M151899-4.jfif", "Pic/Tissot/M151899_5.jfif"]
     },
     {
         id: 49,

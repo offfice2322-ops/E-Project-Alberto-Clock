@@ -194,7 +194,7 @@ const renderDetailPage = () => {
     const imageGallery = product.images
         .map(
             (image, index) => `
-                <div class="col-md-4 col-6 mb-3">
+                <div class="col-6 mb-3">
                     <img src="${image}" class="img-fluid detail-thumb ${index === 0 ? "active" : ""}" alt="${product.name}">
                 </div>
             `
@@ -207,7 +207,7 @@ const renderDetailPage = () => {
                 <div class="detail-main-image-wrap">
                     <img src="${product.images[0]}" class="img-fluid detail-main-image" alt="${product.name}">
                 </div>
-                <div class="row mt-3">${imageGallery}</div>
+                <div class="row detail-image-gallery mt-3">${imageGallery}</div>
             </div>
 
             <div class="col-lg-5">
