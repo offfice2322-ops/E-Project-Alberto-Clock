@@ -317,15 +317,34 @@ const initialiseTicker = () => {
     window.setInterval(updateTime, 1000)
 
     const locationElement = ticker.querySelector("[data-live-location]")
+    const updateLocationName = async ({ latitude, longitude }) => {
+        const params = new URLSearchParams({ latitude, longitude, localityLanguage: "en" })
+        const response = await fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?${params}`)
+        if (!response.ok) throw new Error("Unable to resolve location")
+
+        const place = await response.json()
+        const locationName = [
+            place.locality || place.localityInfo?.administrative?.[2]?.name,
+            place.city,
+            place.principalSubdivision,
+            place.countryName,
+        ].filter(Boolean).filter((name, index, names) => names.indexOf(name) === index).join(", ")
+
+        if (!locationName) throw new Error("Location name unavailable")
+        locationElement.textContent = `Location: ${locationName}`
+    }
+
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(
+        navigator.geolocation.watchPosition(
             ({ coords }) => {
-                locationElement.textContent = `Location: ${coords.latitude.toFixed(2)}, ${coords.longitude.toFixed(2)}`
+                updateLocationName(coords).catch(() => {
+                    locationElement.textContent = "Location: unavailable"
+                })
             },
             () => {
                 locationElement.textContent = "Location: unavailable"
             },
-            { timeout: 8000 }
+            { enableHighAccuracy: true, maximumAge: 10000, timeout: 8000 }
         )
     } else {
         locationElement.textContent = "Location: unavailable"

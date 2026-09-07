@@ -307,7 +307,7 @@ const initialiseTicker = () => {
     const ticker = document.createElement("div")
     ticker.className = "live-ticker"
     ticker.setAttribute("aria-live", "polite")
-    ticker.innerHTML = '<div class="live-ticker-track"><span>ALBERTO CLOCKS LIVE</span><span data-live-time></span><span data-live-location>Location: Baldia Town, Karachi, Pakistan</span></div>'
+    ticker.innerHTML = '<div class="live-ticker-track"><span>ALBERTO CLOCKS LIVE</span><span data-live-time></span><span data-live-location>Location: locating...</span></div>'
     document.body.append(ticker)
 
     const timeElement = ticker.querySelector("[data-live-time]")
@@ -320,6 +320,39 @@ const initialiseTicker = () => {
     updateTime()
     window.setInterval(updateTime, 1000)
 
+    const locationElement = ticker.querySelector("[data-live-location]")
+    const updateLocationName = async ({ latitude, longitude }) => {
+        const params = new URLSearchParams({ latitude, longitude, localityLanguage: "en" })
+        const response = await fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?${params}`)
+        if (!response.ok) throw new Error("Unable to resolve location")
+
+        const place = await response.json()
+        const locationName = [
+            place.locality || place.localityInfo?.administrative?.[2]?.name,
+            place.city,
+            place.principalSubdivision,
+            place.countryName,
+        ].filter(Boolean).filter((name, index, names) => names.indexOf(name) === index).join(", ")
+
+        if (!locationName) throw new Error("Location name unavailable")
+        locationElement.textContent = `Location: ${locationName}`
+    }
+
+    if (navigator.geolocation) {
+        navigator.geolocation.watchPosition(
+            ({ coords }) => {
+                updateLocationName(coords).catch(() => {
+                    locationElement.textContent = "Location: unavailable"
+                })
+            },
+            () => {
+                locationElement.textContent = "Location: unavailable"
+            },
+            { enableHighAccuracy: true, maximumAge: 10000, timeout: 8000 }
+        )
+    } else {
+        locationElement.textContent = "Location: unavailable"
+    }
 }
 
 const renderCartPage = () => {
