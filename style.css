@@ -162,10 +162,15 @@ body {
 }
 
 .btn-gold {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
     background-color: var(--accent-gold);
     color: #000;
     font-weight: bold;
     border: 1px solid var(--accent-gold);
+    cursor: pointer;
     transition: all 0.3s ease;
 }
 
@@ -174,6 +179,18 @@ body {
     color: #000;
     border-color: var(--accent-gold-hover);
     transform: translateY(-2px);
+}
+
+.btn-gold:focus-visible {
+    outline: 3px solid rgba(241, 196, 15, 0.55);
+    outline-offset: 2px;
+}
+
+.btn-gold:disabled,
+.btn-gold.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
 }
 
 .ctrc img {
